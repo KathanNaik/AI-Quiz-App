@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Quiz</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="start-screen">
+      <div id="start-form">
+        <div class="form-header">Enter Your Details!</div>
+
+        <label class="form-label" for="name">Name</label>
+        <input class="form-input" type="text" name="name" placeholder="Your full name" id="name" required>
+
+        <label class="form-label" for="email">Email</label>
+        <input class="form-input" type="email" name="email" placeholder="Your e-mail address" id="email" required>
+
+        <label class="form-label" for="company">Company</label>
+        <input class="form-input" type="text" name="company" placeholder="Name of your company" id="company" required>
+
+        <button id="start-button">Start</button> 
+        
+        <div id="alert"></div>
+      </div>  
+
+    </div>
+    <div class="">
+      <div id="video-container" class="hide">
+        <video id="AIVideo" style="border-radius: 0.6em!important;" autoplay>
+          <source src="" type="video/mp4">
+        </video>
+      </div>
+      <div id="display-container" class="hide">
+        <div class="header">
+          <div class="number-of-count">
+            <span class="number-of-question">1 of 3 questions</span>
+          </div>
+          <div class="timer-div">
+            <img src="timer-icon.svg" />
+            <span class="time-left">60s</span>
+          </div>
+        </div>
+        <div id="container">
+          <!-- questions and options will be displayed here -->
+        </div>
+        <button id="next-button">Next</button>
+      </div>
+    </div>
+    <div class="score-container hide">
+      <div id="user-score">Demo Score</div>
+      <div id="result" class="lineUp"></div>
+      <button id="submit-button">Submit</button>
+    </div>
+    <!-- Script -->
+    <script src="script.js"></script>
+  </body>
+</html>
