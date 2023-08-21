@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI-Quiz-Admin</title>
+    <link rel="stylesheet" href="admin.css" />
+
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Ubuntu:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+</head>
+<body>
+    <h2>AI Quiz Scores</h2>
+    <table class="fl-table">
+        <thead>
+        <tr>
+            <th>Email</th>
+            <th>Name</th>
+            <th>Company</th>
+            <th>Score</th>
+        </tr>
+        </thead>
+        <tbody  id="tb">
+       
+        <tbody>
+    </table>
+    <form id="start-form" method="post" action="http://localhost:8080/api/marksRemove">
+      <div class="form-label">E-mail to Remove</div>
+      <input class="form-input" type="text" name="remove" placeholder="enter email of entry to remove" id="remove" required>
+      <button id="remove-button">Remove</button> 
+    </form>
+    <!-- Script -->
+    <script src="admin.js"></script>
+</body>
+</html>
